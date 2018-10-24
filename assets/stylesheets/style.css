@@ -90,17 +90,16 @@ label{
 }
 
 .radio-toolbar label {
-
+  padding: 8px 14px;
   display: inline-block;
   background-color: #ddd;
-  padding: 4px 11px;
   font-family: "Muli";
   font-size: 16px;
   cursor: pointer;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #bbb;
+  background-color: #ff4500;
 }
 
 a, a:visited, a:hover {
