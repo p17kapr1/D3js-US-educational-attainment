@@ -114,6 +114,7 @@ label{
 
 .radio-toolbar input[type="radio"]:checked+label {
   background-color: #990099;
+  color: white;
 }
 
 a, a:visited, a:hover {
