@@ -92,7 +92,7 @@ label{
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
-    padding: 8px 16px;
+    padding: 6px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -101,7 +101,6 @@ label{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 20px;
     font-weight: bold;
 }
 
@@ -135,6 +134,7 @@ textarea:focus, input:focus, button:focus, button {
 
 button {
 	border: none;
+        border-radius: 20px;
 }
 
 .arc text {
