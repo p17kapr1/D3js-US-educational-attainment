@@ -105,11 +105,20 @@ label{
   font-weight:bold;
   border: outset;
   font-family: "Muli";
+  margin: 2px 4px;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
   background-color: #3e8e41;
 }
+
+.radio-toolbar:active
+{
+background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 a, a:visited, a:hover {
   text-decoration: none;
