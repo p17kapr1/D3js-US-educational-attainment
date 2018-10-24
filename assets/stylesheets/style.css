@@ -111,11 +111,10 @@ label{
 
 .radio-toolbar:active
 {
-background-color: #3e8e41;
+  background-color: #DAA520;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
 
 a, a:visited, a:hover {
   text-decoration: none;
