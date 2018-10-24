@@ -86,7 +86,6 @@ label{
 
 .radio-toolbar input[type="radio"] {
   display: none;
-    
 }
 
 .radio-toolbar label {
@@ -106,6 +105,11 @@ label{
 
 .radio-toolbar input[type="radio"]:checked+label {
   background-color: #ff4500;
+}
+
+.radio-toolbar input[type="radio"]:checked+label:hover{
+  background-color: #ff4500;
+  color: black;
 }
 
 a, a:visited, a:hover {
