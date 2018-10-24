@@ -95,7 +95,7 @@ label{
   color: #fff;
   font-family: "Muli";
   outline: none;
-  border: none;
+  border: outset;
   text-align: center; 
   font-size: 16px;
   border-radius: 20px;
