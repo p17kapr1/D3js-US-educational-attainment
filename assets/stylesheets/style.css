@@ -101,6 +101,7 @@ label{
   border: outset;
   font-family: "Muli";
   margin: 2px 6px;
+}
 
 .label:hover {background-color: #3e8e41}
 
