@@ -109,6 +109,12 @@ a, a:visited, a:hover {
 	text-decoration: none;
 }
 
+a, a:visited, a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 textarea, input {
     font-family: "Muli", "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-transition: border .5s ease-in-out;
