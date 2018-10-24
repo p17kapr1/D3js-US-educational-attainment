@@ -103,9 +103,9 @@ label{
   margin: 2px 6px;
 }
 
-.label:hover {background-color: #3e8e41}
+.radio-toolbar input[type="radio"]:hover {background-color: #3e8e41}
 
-.label:active {
+.radio-toolbar input[type="radio"]:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
