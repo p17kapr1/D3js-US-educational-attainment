@@ -85,10 +85,6 @@ label{
 }
 
 .radio-toolbar input[type="radio"] {
-  background-color: #DAA520;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-    
 }
 
 .radio-toolbar label {
@@ -105,6 +101,13 @@ label{
   border: outset;
   font-family: "Muli";
   margin: 2px 6px;
+
+.label:hover {background-color: #3e8e41}
+
+.label:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
