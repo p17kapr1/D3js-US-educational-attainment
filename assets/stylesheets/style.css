@@ -89,16 +89,16 @@ label{
 }
 
 .radio-toolbar label {
+  border-radius: 20px;
   padding: 6px 14px;
   display: inline-block;
-  background-color: #fff;
+  background-color: #ffe140;
   color: #000;
   font-family: "Muli";
   outline: none;
   border: outset;
   text-align: center; 
   font-size: 16px;
-  border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
   -webkit-transition-duration: 0.4s; 
@@ -107,7 +107,7 @@ label{
 
 .radio-toolbar label:hover {
   background-color: #ffd700;
-  color: black;
+  color: white;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
