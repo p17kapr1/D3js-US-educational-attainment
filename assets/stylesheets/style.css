@@ -91,7 +91,7 @@ label{
 .radio-toolbar label {
   padding: 6px 14px;
   display: inline-block;
-  background-color: #ff6126;
+  background-color: #ffe140;
   color: #fff;
   font-family: "Muli";
   outline: none;
@@ -104,12 +104,12 @@ label{
 }
 
 .radio-toolbar label:hover {
-  background-color: #ff4500;
+  background-color: #ffd700;
   color: black;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #ff4500;
+  background-color: #ffd700;
 }
 
 a, a:visited, a:hover {
