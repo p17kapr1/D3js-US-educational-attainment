@@ -101,6 +101,7 @@ label{
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 .radio-toolbar label:hover {
