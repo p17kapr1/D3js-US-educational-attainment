@@ -101,6 +101,7 @@ label{
   border-radius: 20px;
   box-shadow: 0 9px #999;
   font-weight: bold;
+  margin: 2px 6px;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
