@@ -100,13 +100,14 @@ label{
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #3e8e41;
+  background-color: #bbb;
 }
 
 
 
 a, a:visited, a:hover {
-	text-decoration: none;
+  text-decoration: none;
+  background-color: #3e8e41;	
 }
 
 a, a:visited, a:active {
