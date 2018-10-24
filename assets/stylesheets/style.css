@@ -89,7 +89,6 @@ label{
 }
 
 .radio-toolbar label {
-  background-color: #9900cc; /* Green */
     border: none;
     color: white;
     padding: 8px 16px;
@@ -97,20 +96,20 @@ label{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
+    margin: 4px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    border-weight: bold;
+    border-radius: 20px;
 }
 
 .radio-toolbar label:hover {
-  background-color: #9900cc;
+  background-color: #4CAF50;
   color: white;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #990099;
+  background-color: #4CAF50;
   color: white;
 }
 
