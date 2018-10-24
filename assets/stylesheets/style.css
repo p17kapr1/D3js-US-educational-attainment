@@ -92,11 +92,13 @@ label{
   border-radius: 20px;
   padding: 6px 14px;
   display: inline-block;
-  background-color: #ffae4d;
-  color: #000;
+  background-color: #fff;
+  color: #9900cc;
   font-family: "Muli";
   outline: none;
-  border: outset;
+  border: solid;
+  border-width: 2px;
+  border-color: #000;
   text-align: center; 
   font-size: 16px;
   cursor: pointer;
@@ -106,12 +108,12 @@ label{
 }
 
 .radio-toolbar label:hover {
-  background-color: #ff8c00;
+  background-color: #9900cc;
   color: white;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #ff8c00;
+  background-color: #990099;
 }
 
 a, a:visited, a:hover {
