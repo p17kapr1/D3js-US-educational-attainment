@@ -95,11 +95,8 @@ label{
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   color: #fff;
-  background-color: #4CAF50;
-  border: none;
+  background-color: #FFD700;
   border-radius: 20px;
   box-shadow: 0 6px #999;
   font-weight: bold;
@@ -109,7 +106,7 @@ label{
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #3e8e41;
+  background-color: #DAA520;
 }
 
 .radio-toolbar:active
