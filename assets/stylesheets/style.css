@@ -103,13 +103,13 @@ label{
   font-weight: bold;
 }
 
-.radio-toolbar input[type="radio"]:checked+label {
-  background-color: #ff4500;
-}
-
-.radio-toolbar input[type="radio"]:checked+label:hover{
+.radio-toolbar label:hover {
   background-color: #ff4500;
   color: black;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #ff4500;
 }
 
 a, a:visited, a:hover {
