@@ -91,7 +91,7 @@ label{
 .radio-toolbar label {
     background-color: white; 
     color: black; 
-    border: 2px outset #de7a22;
+    border: 2px outset #f25c00;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
@@ -107,12 +107,12 @@ label{
 }
 
 .radio-toolbar label:hover {
-  background-color: #de7a22;
+  background-color: #f25c00;
   color: white;
 }
 
 .radio-toolbar label:active {
-  background-color: #de7a22;
+  background-color: #f25c00;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
