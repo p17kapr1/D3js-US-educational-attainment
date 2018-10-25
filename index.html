@@ -7,15 +7,15 @@
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script type="text/javascript" src="sound-mouseover.js"></script>
+    <script type="text/javascript" src="mousehover-sound.js"></script>
 </head>
   <header>
        <nav>
     <ul>
-      <li><a href="#top" onmousehover="button_sound.play()" >Top</a></li>
-      <li><a href="#national" onmousehover="button_sound.play()" >National</a></li>
-      <li><a href="#regional" onmousehover="button_sound.play()" >Regional</a></li>
-      <li><a href="#state" onmousehover="button_sound.play()" >State-Level</a></li>
+      <li><a href="#top" onmouseover="playclip();" >Top</a></li>
+      <li><a href="#national" onmouseover="playclip();" >National</a></li>
+      <li><a href="#regional" onmouseover="playclip();" >Regional</a></li>
+      <li><a href="#state" onmouseover="playclip();" >State-Level</a></li>
     <ul>
         </nav>
     </header>
@@ -86,8 +86,11 @@
 
 </body>
 
-<script>		  
-  var button_sound = new Audio("mousehover-sound.mp3");
-</script>
+<audio>
+<source src="mousehover-sound.mp3"></source>
+<source src="mousehover-sound.ogg"></source>
+</audio>
+
+<div id="sounddiv"><bgsound id="sound"></div>
 
 </html>
