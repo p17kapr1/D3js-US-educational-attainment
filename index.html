@@ -21,7 +21,7 @@
         </nav>
     </header>
 <body>
-    <h1 class="title">Educational Attainment in the United States</h1>
+    <h1 class="title"> ('a').mouseenter(function(); Educational Attainment in the United States</h1>
         
 	
 	<p><br></p>
@@ -29,7 +29,7 @@
 	
     <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
     <p><br><br><br></p>
-    <h2 class="subtitle"> onmouseover="https://code.responsivevoice.org/responsivevoice.js;"Educational Attainment: Region-level Breakdown of University Students</h2>
+    <h2 class="subtitle">Educational Attainment: Region-level Breakdown of University Students</h2>
 	
     <form id="tree-form">
         <div class="radio-toolbar">
@@ -82,6 +82,13 @@
 /* scrollTop() >= 240
    Should be equal the the height of the header
  */
+</script>
+
+<script>
+$('a').mouseenter(function() { // Attach this function to all mouseenter events for 'a' tags 
+  responsiveVoice.cancel(); // Cancel anything else that may currently be speaking
+  responsiveVoice.speak($(this).text()); // Speak the text contents of all nodes within the current 'a' tag
+});
 </script>
 
 </body>
