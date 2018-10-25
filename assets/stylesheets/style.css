@@ -92,21 +92,28 @@ label{
     background-color: white; 
     color: black; 
     border: 2px solid #de7a22;
-    padding: 6px 12px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 4px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
+    box-shadow: 0 9px #999;
     font-weight: bold;
 }
 
 .radio-toolbar label:hover {
   background-color: #de7a22;
   color: white;
+}
+
+.radio-toolbar label:active {
+  background-color: #de7a22;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
@@ -134,7 +141,6 @@ textarea:focus, input:focus, button:focus, button {
 
 button {
 	border: none;
-        border-radius: 20px;
 }
 
 .arc text {
