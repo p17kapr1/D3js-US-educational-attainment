@@ -86,6 +86,7 @@ label{
 
 .radio-toolbar input[type="radio"] {
   display: none;
+  border-radius: 10px;
 }
 
 .radio-toolbar label {
@@ -103,7 +104,6 @@ label{
     cursor: pointer;
     box-shadow: 0 9px #999;
     font-weight: bold;
-    border-radius: 10px;
 }
 
 .radio-toolbar label:hover {
