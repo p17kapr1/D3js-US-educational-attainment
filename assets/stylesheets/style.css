@@ -108,6 +108,7 @@ label{
 .radio-toolbar label:hover {
   background-color: #304040;
   color: white;
+  border-radius: 20px; 
 }
 
 .radio-toolbar label:active {
@@ -141,7 +142,6 @@ textarea:focus, input:focus, button:focus, button {
 
 button {
     border: none;
-    border-radius: 10px; 
 }
 
 .arc text {
