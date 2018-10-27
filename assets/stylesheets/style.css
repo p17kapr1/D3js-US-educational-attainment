@@ -16,10 +16,12 @@
     --body-font-italic: ;
     --code-font: ;
 
-*{
-  box-sizing: content-box;
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
 }
-
 
 
 header {
