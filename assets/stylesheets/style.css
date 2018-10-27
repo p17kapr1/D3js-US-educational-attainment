@@ -98,8 +98,8 @@ label{
     display: inline-block;
     font-size: 16px;
     margin: 6px 8px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
     cursor: pointer;
     box-shadow: 0 9px #999;
     font-weight: bold;
@@ -107,8 +107,7 @@ label{
 
 .radio-toolbar label:hover {
   background-color: #304040;
-  color: white;
-  border-radius: 20px; 
+  color: white; 
 }
 
 .radio-toolbar label:active {
