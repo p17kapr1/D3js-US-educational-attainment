@@ -16,7 +16,7 @@
     --body-font-italic: ;
     --code-font: ;
 
-.selector-for-some-widget {
+*{
   box-sizing: content-box;
 }
 
