@@ -15,17 +15,10 @@
     --body-font: ;
     --body-font-italic: ;
     --code-font: ;
-}
 
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
 
 * {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
+	box-sizing: content-box;
 }
 
 header {
