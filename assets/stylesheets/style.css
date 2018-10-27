@@ -15,6 +15,7 @@
     --body-font: ;
     --body-font-italic: ;
     --code-font: ;
+}
 
 * {
     box-sizing: border-box;
