@@ -15,7 +15,8 @@
     <title>Educational Attainment in the United States</title>
 </head>
   <header>
-
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
        <nav>
     <ul>
    <li><a href="#top" onmouseover="playclip();" >Top</a></li>
@@ -24,7 +25,9 @@
    <li><a href="#state" onmouseover="playclip();" >State-Level</a></li>
     <ul>
         </nav>
-
+    [class*="col-"] {
+        width: 100%;
+    }
     </header>
 <body>
 	<h1 class="title">Educational Attainment in the United States</h1>
