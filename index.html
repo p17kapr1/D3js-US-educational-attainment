@@ -29,11 +29,13 @@
 	<h1 class="title">Educational Attainment in the United States</h1>
 	<p><br></p>
     <h2 class="subtitle"> Nation-Wide Education Level of Population in Schooling</h2>
- <div class="col-sm-4">
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
     <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
 	</div><p><br><br><br></p>
     <h2 class="subtitle">Educational Attainment: Region-level Breakdown of University Students</h2>
-	
+	<div class="col-sm-4">
     <form id="tree-form">
         <div class="radio-toolbar">
             <input type="radio" id="mode1" name="treeSum" value="number" checked>
@@ -44,14 +46,14 @@
             <label for="mode3">Males in College (18-24yrs)(in %)</label>
             <input type="radio" id="mode4" name="treeSum" value="femal">
             <label for="mode4">Females in College (18-24yrs) (in %)</label>
-        </div>
+	    </div>
     </form>
 	<p></p>
     <div id="chart"></div>
 	<a name="state"></a>
-    <p><br><br></p>
+		<p><br><br></p></div>
     <h2 class="subtitle">Education Level of Population in Schooling: State-level Breakdown</h2>
-	
+	<div class="col-sm-4">
     <form id="stack-form">
         <div class="radio-toolbar">
             <input type="radio" id="radio1" name="mode" value="bypercent" checked>
@@ -62,7 +64,7 @@
     </form>
     <div>
         <svg id="stacked-bar-chart"></svg>
-    </div>
+		</div></div>
 
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
