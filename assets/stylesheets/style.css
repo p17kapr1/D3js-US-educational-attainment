@@ -35,11 +35,6 @@ header h1 {
   left: 50px;
   color: #fff;
 }
-.fixed-header {
-  position: fixed;
-  top:0; left:0;
-  width: 100%; 
-}
 
 body {
     font-size: 14px;
