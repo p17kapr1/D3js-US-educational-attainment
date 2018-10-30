@@ -29,6 +29,12 @@
 	margin:0px auto;
 }
 
+@media screen and (max-width:959px){
+	#container{
+		width:100%;
+	}
+}
+
 header {
   height:36px;
   z-index:10;
