@@ -30,6 +30,11 @@ html, body{
     color: #222;
 }
 
+header {
+  height:36px;
+  z-index:10;
+}
+
 .navbar {
    padding: .8rem;
 }
