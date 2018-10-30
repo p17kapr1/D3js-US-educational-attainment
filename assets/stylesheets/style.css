@@ -24,9 +24,22 @@
     -ms-box-sizing: border-box;
 }
 
-header {
-  height:36px;
-  z-index:10;
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #222;
+}
+
+.navbar {
+   padding: .8rem;
+}
+
+.navbar-nav li {
+   padding-right: 20px;
+}
+
+.nav-link {
+   font-size: 1.1em !important;
 }
 
 body {
