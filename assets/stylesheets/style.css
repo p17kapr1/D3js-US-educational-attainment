@@ -24,6 +24,11 @@
     -ms-box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #222;
+}
 
 body {
     font-size: 14px;
