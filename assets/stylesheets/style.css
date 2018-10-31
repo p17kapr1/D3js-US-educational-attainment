@@ -35,6 +35,13 @@ header {
   z-index:10;
 }
 
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+}
+
+
 
 .navbar {
    padding: .8rem;
