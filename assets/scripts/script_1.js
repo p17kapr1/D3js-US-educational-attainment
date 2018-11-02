@@ -1,6 +1,14 @@
 // Script 1
 // Data Visualization III - Pie Chart
 
+var svg = d3.select('.chart-container').append("svg")
+    .attr("width", '100%')
+    .attr("height", '100%')
+    .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+    .attr('preserveAspectRatio','xMinYMin')
+    .append("g")
+    .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
+
 var donut = donutChart()
         .width(960)
         .height(450)
