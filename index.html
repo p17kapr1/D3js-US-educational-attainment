@@ -113,7 +113,7 @@
 
 <script>
 $(document).ready(function(){
-    $("h1, h2, a").mouseenter(function(){
+    $("h1, h2, div").mouseenter(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text());
     });
