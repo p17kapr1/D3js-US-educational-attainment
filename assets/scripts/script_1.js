@@ -140,6 +140,7 @@ function donutChart() {
                 selection.on('mouseenter', function (data) {
 
                     pieChartSVG.append('text')
+                        responsiveVoice.speak($(this).text());
                         .attr('class', 'toolCircle')
                         .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                         .html(toolTipHTML(data)) // add text to the circle.
