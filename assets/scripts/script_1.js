@@ -1,16 +1,6 @@
 // Script 1
 // Data Visualization III - Pie Chart
 
-var pie-chart = $("#pie-chart"),
-    aspect = pie-chart.width() / pie-chart.height(),
-    container = pie-chart.parent();
-$(window).on("resize", function() {
-    var targetWidth = container.width();
-    pie-chartt.attr("width", targetWidth);
-    pie-chart.attr("height", Math.round(targetWidth / aspect));
-}).trigger("resize");
-
-
 var donut = donutChart()
         .width(960)
         .height(450)
@@ -25,6 +15,15 @@ var donut = donutChart()
             .datum(data) // bind data to the div
             .call(donut); // draw chart in div
     });
+
+var pie-chart = $("#pie-chart"),
+    aspect = pie-chart.width() / pie-chart.height(),
+    container = pie-chart.parent();
+$(window).on("resize", function() {
+    var targetWidth = container.width();
+    pie-chartt.attr("width", targetWidth);
+    pie-chart.attr("height", Math.round(targetWidth / aspect));
+}).trigger("resize");
 
 function donutChart() {
     var width,
