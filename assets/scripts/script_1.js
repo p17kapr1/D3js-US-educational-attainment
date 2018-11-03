@@ -242,4 +242,6 @@ function donutChart() {
     };
 
     return chart;
+
+window.addEventListener('resize', donutChart());
 }
