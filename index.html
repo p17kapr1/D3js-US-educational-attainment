@@ -121,6 +121,16 @@ $(document).ready(function(){
         responsiveVoice.cancel();
     	});
 });
+
+$(document).ready(function(){
+    $("svg").mouseover(function(){
+		responsiveVoice.cancel(); 
+  		responsiveVoice.speak($(this).text());
+    });
+    $("svg").mouseleave(function(){
+        responsiveVoice.cancel();
+    	});
+
 </script>
 </body>
 
