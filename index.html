@@ -120,7 +120,7 @@
 $(document).ready(function(){
     $("h1, h2, label").mouseenter(function(){
 		responsiveVoice.cancel(); 
-  		responsiveVoice.speak($(this).text());
+  		responsiveVoice.speak($(this).text(), "UK English Male");
 });
     $("h1, h2, label").mouseleave(function(){
         responsiveVoice.cancel();
