@@ -153,8 +153,9 @@ function donutChart() {
                         .style('fill-opacity', 0.35);
 
                     var msg = new SpeechSynthesisUtterance(toolTipHTML(data));
-                        speechSynthesis.speak(msg);
-                        speechSynthesis.cancel(msg);
+                         speechSynthesis.cancel(msg);
+                         speechSynthesis.speak(msg);
+                       
 
                 });
 
