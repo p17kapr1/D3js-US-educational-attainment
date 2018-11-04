@@ -154,7 +154,7 @@ function donutChart() {
 
                     var msg = new SpeechSynthesisUtterance(toolTipHTML(data));
                          speechSynthesis.cancel(msg);
-                         speechSynthesis.speak(msg, "UK English Female");
+                         speechSynthesis.speak(msg);
                      
 
                 });
@@ -162,6 +162,7 @@ function donutChart() {
                 // remove the tooltip when mouse leaves the slice/label
                 selection.on('mouseout', function () {
                     d3.selectAll('.toolCircle').remove();
+                    speechSynthesis.cancel(msg);
                 });
             }
 
