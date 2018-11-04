@@ -113,11 +113,11 @@
 
 <script>
 $(document).ready(function(){
-    $("h1, h2, label, d3.tsv").mouseenter(function(){
+    $("h1, h2, label, svg id").mouseenter(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text());
     });
-    $("h1, h2, label, d3.tsv").mouseleave(function(){
+    $("h1, h2, label, svg id").mouseleave(function(){
         responsiveVoice.cancel();
     	});
 });
