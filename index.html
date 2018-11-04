@@ -13,9 +13,11 @@
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-
-
+<script>
+var msg = new SpeechSynthesisUtterance(h1, h2, label);
+                         speechSynthesis.cancel(msg);
+                         speechSynthesis.speak(msg);
+	</script>
 </head>
  <header>
 
@@ -116,19 +118,7 @@
 
 
 
-<script>
 
-$(document).ready(function(){
-    $("h1, h2, label").mouseenter(function(){
-		responsiveVoice.cancel(); 
-  		responsiveVoice.speak($(this).text());
-});
-    $("h1, h2, label").mouseleave(function(){
-        responsiveVoice.cancel();
-    	});
-});
-
-</script>
 </body>
 
 <audio>
