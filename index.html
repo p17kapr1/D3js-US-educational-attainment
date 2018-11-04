@@ -112,24 +112,23 @@
 
 
 <script>
+
 $(document).ready(function(){
     $("h1, h2, label").mouseenter(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text());
-    });
-    $("h1, h2, label").mouseleave(function(){
-        responsiveVoice.cancel();
-    	});
-});
-
-$(document).ready(function(){
     $("svg").mouseover(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text());
     });
-    $("svg").mouseleave(function(){
+});
+    $("h1, h2, label").mouseleave(function(){
         responsiveVoice.cancel();
+    $("svg").mouseleave(function(){
+	responsiveVoice.cancel();
     	});
+    });
+});
 
 </script>
 </body>
