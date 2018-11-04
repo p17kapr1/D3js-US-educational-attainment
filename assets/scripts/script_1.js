@@ -154,7 +154,7 @@ function donutChart() {
 
                     var msg = new SpeechSynthesisUtterance(toolTipHTML(data));
                          speechSynthesis.cancel(msg);
-                         speechSynthesis.speak(msg);
+                         speechSynthesis.speak(msg, "UK English Female);
                      
 
                 });
