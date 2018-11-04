@@ -43,7 +43,7 @@ var grandparent = svg.append("g")
         .attr("y", -margin.top)
         .attr("width", width)
         .attr("height", margin.top)
-        .attr("fill", '#00802b');
+        .attr("fill", '#00802B');
 
     grandparent.append("text")
         .attr("x", 10)
