@@ -152,10 +152,17 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
 
-                    var msg = new SpeechSynthesisUtterance(toolTipHTML(data));
-                         speechSynthesis.cancel(msg);
-                         speechSynthesis.speak(msg);
+
                        
+                    $(document).ready(function(){
+                        $("toolTipHTML(data)").mouseenter(function(){
+		                responsiveVoice.cancel(); 
+  		                responsiveVoice.speak($(this).text());
+                    });
+                    $("toolTipHTML(data)").mouseleave(function(){
+                                responsiveVoice.cancel();
+    	            });
+                    });
 
                 });
 
