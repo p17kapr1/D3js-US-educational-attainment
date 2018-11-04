@@ -154,7 +154,7 @@ function donutChart() {
                      
                     var text = new SpeechSynthesisUtterance(toolTipHTML(data));
                         speechSynthesis.cancel(text);
-                        speechSynthesis.speak(text);
+                        speechSynthesis.speak(text, "UK English Female");
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
