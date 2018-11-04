@@ -272,4 +272,8 @@ d3.json("assets/data/us.json", function(data) {
             })
             .join(sep);
     }
+var message = new SpeechSynthesisUtterance(data);
+                         speechSynthesis.cancel(message);
+                         speechSynthesis.speak(message);
+
 });
