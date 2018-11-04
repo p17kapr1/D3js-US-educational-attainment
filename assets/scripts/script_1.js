@@ -152,7 +152,9 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
 
-
+                    var msg = new responsiveVoice(toolTipHTML(data));
+                         responsiveVoice.cancel(msg);
+                         responsiveVoice.speak(msg);
                      
 
                 });
