@@ -153,16 +153,7 @@ function donutChart() {
                         .style('fill-opacity', 0.35);
 
 
-                       
-                    $(document).ready(function(){
-                        $("data").mouseenter(function(){
-		                responsiveVoice.cancel(); 
-  		                responsiveVoice.speak($(this).text());
-                    });
-                    $("data").mouseleave(function(){
-                                responsiveVoice.cancel();
-    	            });
-                    });
+                     
 
                 });
 
