@@ -243,4 +243,8 @@ function donutChart() {
 
     return chart;
 
+    var msg = new SpeechSynthesisUtterance(label);
+        onmouseenter = speechSynthesis.speak(msg);
+        onmouseleave = speechSynthesis.cancel(msg);
+
 }
