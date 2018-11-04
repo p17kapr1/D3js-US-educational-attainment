@@ -272,7 +272,7 @@ d3.json("assets/data/us.json", function(data) {
             })
             .join(sep);
     }
-var message = new SpeechSynthesisUtterance(data);
+var message = new SpeechSynthesisUtterance(text);
                          speechSynthesis.cancel(message);
                          speechSynthesis.speak(message);
 
