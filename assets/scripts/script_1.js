@@ -155,11 +155,11 @@ function donutChart() {
 
                        
                     $(document).ready(function(){
-                        $("toolTipHTML(data)").mouseenter(function(){
+                        $("data").mouseenter(function(){
 		                responsiveVoice.cancel(); 
   		                responsiveVoice.speak($(this).text());
                     });
-                    $("toolTipHTML(data)").mouseleave(function(){
+                    $("data").mouseleave(function(){
                                 responsiveVoice.cancel();
     	            });
                     });
