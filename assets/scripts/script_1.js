@@ -152,15 +152,13 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
                      
-                    var message = new SpeechSynthesisUtterance(toolTipHTML(data));
-                        speechSynthesis.cancel(message);
-                        speechSynthesis.speak(message);
+                    responsiveVoice.speak(toolTipSpeaking(data));
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
                 selection.on('mouseout', function () {
                     d3.selectAll('.toolCircle').remove();
-                    speechSynthesis.cancel(toolTipHTML(data));
+                    responsiveVoice.cancel();
                 });
             }
 
