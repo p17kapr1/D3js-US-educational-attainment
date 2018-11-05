@@ -74,14 +74,17 @@ d3.json("assets/data/us.json", function(data) {
 
     display(root);
 
+    var message = new SpeechSynthesisUtterance();
+
     function display(d) {
         // write text into grandparent
         // and activate click's handler
         grandparent
             .datum(d.parent)
             .on("click", transition)
-            .select("text")
-            .text(name(d));
+            .select("text") 
+            .text(name(d)); //text name, name(d)
+            .on("mouseenter", textSpeech)
         // grandparent color
         grandparent
             .datum(d.parent)
@@ -102,6 +105,7 @@ d3.json("assets/data/us.json", function(data) {
         })
             .classed("children", true)
             .on("click", transition);
+            .on("mouseenter", textSpeech)
         g.selectAll(".child")
             .data(function (d) {
                 return d.children || [d];
@@ -258,6 +262,10 @@ d3.json("assets/data/us.json", function(data) {
             ? " -  Click To Zoom Out"
             : " - Click a Region to Inspect States");
     }
+
+    function textSpeech(d){
+        message.text = name(d);
+            speechSynthesis.speak(message);
 
     function breadcrumbs(d) {
         var res = "";
