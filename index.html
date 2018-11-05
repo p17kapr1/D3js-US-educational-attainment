@@ -118,11 +118,11 @@
 
 <script>
 $(document).ready(function(){
-    $("h1, h2, label").mouseenter(function(){
+    $("h1, h2, label, form id="stack-form", svg id="stacked-bar-chart"").mouseenter(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text(), 'UK English Male');
 });
-    $("h1, h2, label").mouseleave(function(){
+    $("h1, h2, label,form id="stack-form", svg id="stacked-bar-chart"").mouseleave(function(){
         responsiveVoice.cancel();
     	});
 });
