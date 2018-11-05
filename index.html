@@ -57,7 +57,7 @@
 	<p><br></p>
     <h2 class="subtitle"> Nation-Wide Education Level of Population in Schooling</h2>
 
-<svg responsiveVoice.cancel(); id="pie-chart"  width="960" height="450"></svg><a name="regional"></a>
+<svg id="pie-chart"  width="960" height="450"></svg><a name="regional"></a>
 	  <p><br><br><br></p>
     <h2 class="subtitle">Educational Attainment: Region-level Breakdown of University Students</h2>
 
@@ -116,11 +116,11 @@
 
 <script>
 $(document).ready(function(){
-    $("h1, h2, label, svg").mouseenter(function(){
+    $("h1, h2, label").mouseenter(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text(), 'UK English Male');
 });
-    $("h1, h2, label, svg").mouseleave(function(){
+    $("h1, h2, label").mouseleave(function(){
         responsiveVoice.cancel();
     	});
 });
