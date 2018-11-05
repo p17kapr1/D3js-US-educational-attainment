@@ -82,9 +82,9 @@ d3.json("assets/data/us.json", function(data) {
         grandparent
             .datum(d.parent)
             .on("click", transition)
+            .on("mouseenter", textSpeech)
             .select("text") 
             .text(name(d)); //text name, name(d)
-            .on("mouseenter", textSpeech)
         // grandparent color
         grandparent
             .datum(d.parent)
@@ -263,10 +263,6 @@ d3.json("assets/data/us.json", function(data) {
             : " - Click a Region to Inspect States");
     }
 
-    function textSpeech(d){
-        message.text = name(d);
-            speechSynthesis.speak(message);
-
     function breadcrumbs(d) {
         var res = "";
         var sep = " > ";
@@ -281,5 +277,8 @@ d3.json("assets/data/us.json", function(data) {
             .join(sep);
     }
 
+    function textSpeech(d){
+        message.text = name(d);
+            speechSynthesis.speak(message);
 
 });
