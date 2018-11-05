@@ -152,8 +152,8 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
 
-                    var msg = new SpeechSynthesisUtterance(toolTipHTML(data));
-                         speechSynthesis.speak(msg);
+                    var message = new SpeechSynthesisUtterance(toolTipHTML(data));
+                         speechSynthesis.speak(message);
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
