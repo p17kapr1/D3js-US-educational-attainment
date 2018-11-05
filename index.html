@@ -116,11 +116,11 @@
 
 <script>
 $(document).ready(function(){
-    $("h1, h2, label, form").mouseenter(function(){
+    $("h1, h2, label, svg").mouseenter(function(){
 		responsiveVoice.cancel(); 
   		responsiveVoice.speak($(this).text(), 'UK English Male');
 });
-    $("h1, h2, label, form").mouseleave(function(){
+    $("h1, h2, label, svg").mouseleave(function(){
         responsiveVoice.cancel();
     	});
 });
