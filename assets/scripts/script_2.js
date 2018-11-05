@@ -83,7 +83,7 @@ d3.json("assets/data/us.json", function(data) {
             .datum(d.parent)
             .on("click", transition)
             .select("text") 
-            .text(name(d)); //text name, name(d)
+            .text(name(d));
         // grandparent color
         grandparent
             .datum(d.parent)
