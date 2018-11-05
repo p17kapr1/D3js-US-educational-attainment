@@ -275,8 +275,6 @@ d3.json("assets/data/us.json", function(data) {
             .join(sep);
     }
 
-    function textSpeech(d){
-        message.text = name(d);
-            speechSynthesis.speak(message);
+
 
 });
