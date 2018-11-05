@@ -151,8 +151,9 @@ function donutChart() {
                         .attr('r', radius * 0.55) // radius of tooltip circle
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
-                     
-                  responsiveVoice.speak(toolTipHTML(data));
+
+                    var msg = responsiveVoice(toolTipHTML(data));
+                        responsiveVoice.speak(msg);
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
