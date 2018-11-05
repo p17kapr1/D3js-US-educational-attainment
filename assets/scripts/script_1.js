@@ -146,7 +146,7 @@ function donutChart() {
                         .style('font-size', '.9em')
                         .style('text-anchor', 'middle'); // centres text in tooltip
 
-responsiveVoice.speak(toolTipSpeaking(data),'US English Male');
+                    responsiveVoice.speak(toolTipHTML(data));
 
                     pieChartSVG.append('circle')
                         .attr('class', 'toolCircle')
