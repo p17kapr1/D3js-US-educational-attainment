@@ -146,14 +146,13 @@ function donutChart() {
                         .style('font-size', '.9em')
                         .style('text-anchor', 'middle'); // centres text in tooltip
 
-                    responsiveVoice.speak(toolTipHTML(data));
-
                     pieChartSVG.append('circle')
                         .attr('class', 'toolCircle')
                         .attr('r', radius * 0.55) // radius of tooltip circle
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
                      
+                  responsiveVoice.speak(toolTipSpeaking(data));
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
