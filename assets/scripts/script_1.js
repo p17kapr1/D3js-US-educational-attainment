@@ -138,7 +138,7 @@ function donutChart() {
 
                 // add tooltip (svg circle element) when mouse enters label or slice
                 selection.on('mouseenter', function (data) {
-
+responsiveVoice.speak(toolTipSpeaking(data));
                     pieChartSVG.append('text')
                         .attr('class', 'toolCircle')
                         .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
@@ -152,7 +152,6 @@ function donutChart() {
                         .style('fill', colour(data.data[category])) // colour based on category mouse is over
                         .style('fill-opacity', 0.35);
                      
-                    responsiveVoice.speak(toolTipSpeaking(data));
                 });
 
                 // remove the tooltip when mouse leaves the slice/label
