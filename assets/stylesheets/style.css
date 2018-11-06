@@ -81,7 +81,7 @@ text{
 
 label{
      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !IMPORTANT;
-     backround-color: #ffb5c5;
+     backround-color: "#ffb5c5";
      border-style: groove;
      border-radius: 21px !IMPORTANT;
 }
